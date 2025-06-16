@@ -9,7 +9,7 @@ export default function Home() {
           Build Consistency with <span className="text-blue-600">Challenge Tracker</span>
         </h1>
         <p className="text-md text-gray-600 mt-20 mb-8">
-          Small habits lead to big results. Challenge Tracker helps you stay committed to your goals by tracking daily progress. Whether you're trying to exercise, read, or learn a new skill — this tool keeps you on track.
+          Small habits lead to big results. Challenge Tracker helps you stay committed to your goals by tracking daily progress. Whether you&apos;re trying to exercise, read, or learn a new skill — this tool keeps you on track.
         </p>
 
         <p className="text-sm text-gray-500 italic">
