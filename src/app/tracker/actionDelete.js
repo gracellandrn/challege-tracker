@@ -11,7 +11,7 @@ export async function deleteTrackerAction(formData) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify([id])
-    })
+    });
 
     revalidatePath("/tracker");
 }

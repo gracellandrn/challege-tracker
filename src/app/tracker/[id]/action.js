@@ -16,7 +16,7 @@ export async function updateProgressAction(_, formData) {
     const res = await fetch(`https://v1.appbackend.io/v1/rows/lNIxD3xofbCd/${id}`);
     const data = await res.json();
 
-    // if (!data) return;
+    if (!data) return;
 
     let currentProgress = [];
     if (data.progress) {
@@ -47,8 +47,6 @@ export async function updateProgressAction(_, formData) {
             },
         ),
     });
-
-    console.log(data._id, data.username, data.password, data.title, data.duration, data.description, updatedProgress,);
 
     revalidatePath(`/tracker/${id}`);
 }
